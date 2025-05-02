@@ -57,10 +57,28 @@
         <!-- show all button -->
          <div class="flex justify-center pt-4">
          <div id="show-all-btn-c" class="hidden">
-          <button  class="btn btn-primary">Sow All</button>
+          <button onclick="showAll()" class="btn btn-primary">Sow All</button>
          </div>
         </div>
       </section>
+
+      <!-- show details model -->
+       <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="show_details_model" class="">
+  <div class="modal-box">
+    
+   <div id="details-box" class="flex flex-col items-start justify-center gap-2 card bg-white w-80  p-4">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     </main>
 
